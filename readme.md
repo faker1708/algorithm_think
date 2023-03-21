@@ -37,3 +37,7 @@ https://blog.csdn.net/v_JULY_v/article/details/6127953
 
 
 
+4   fft
+
+fft 能不能应用在神经网络中呢？
+
