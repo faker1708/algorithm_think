@@ -23,8 +23,10 @@ def get_state(old_state,action):
 
     # new_state = aa - 10 - action*0.1 + random.randint(0,2**2-1)
     # new_state = aa + action *0.5    # 能收敛
-    new_state = old_state - 0.5* action ** 1
-    new_state = old_state + 0.5* action ** 1
+    # new_state = old_state - 0.5* action ** 1
+    # new_state = old_state + 0.5* action ** 1
+
+    new_state = old_state+ action -10
 
     return new_state
 
@@ -36,8 +38,8 @@ def main():
 
     a = pid.pid()
     a.kp = 0.8
-    a.ki = 1
-    a.kd = 0.01
+    a.ki = 0
+    a.kd = 0.00
 
     target = 1024
     state = 0

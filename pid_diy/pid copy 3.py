@@ -17,7 +17,7 @@ class pid():
 
         self.old_error = 0     # 微分时要用 # 这个不好设，就设为0吧
 
-
+        
 
     def get_p(self):
         p = self.error
