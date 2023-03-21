@@ -13,8 +13,8 @@ mpl.rcParams['axes.unicode_minus']=False       #显示负号
 x=np.linspace(0,1,1400)      
  
 #设置需要采样的信号，频率分量有200，400和600
-# y=7*np.sin(2*np.pi*200*x) + 5*np.sin(2*np.pi*400*x)+3*np.sin(2*np.pi*600*x)
-y=np.cos(2*np.pi*200*x) 
+y=7*np.sin(2*np.pi*200*x) + 5*np.sin(2*np.pi*400*x)+3*np.sin(2*np.pi*600*x)
+# y=np.sin(2*np.pi*200*x) 
  
 fft_y=fft(y)                          #快速傅里叶变换
  
